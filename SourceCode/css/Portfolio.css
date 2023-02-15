@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+body{
+  background: rgb(234, 183, 117);
+}
+
+footer{
+  margin-top: 150px;
+}
+
+
+/*Portfolio*/
+#Portfolio{
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 70px auto;
+}
+
+#Portfolio ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+#Portfolio ul li{
+  list-style: none;
+  background: rgb(238, 238, 238);
+  padding: 12px 20px;
+  margin: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#Portfolio ul li.focus{
+  background: rgb(3, 168, 244);
+  color: rgb(255, 255, 255);
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.picture .itemBox{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 5px;
+  display: block;
+}
+
+.picture .itemBox:hover{
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  outline: 1.5px solid rgb(21, 72, 138);
+}
+
+.picture .itemBox.hide{
+  display: none;
+}
+
+.picture .itemBox img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+/* img modal */
+
+.picture .itemBox .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.picture .itemBox .modal .myModelImg{
+  margin: 8vh 10vw 12vh 10vw;
+  display: block;
+  width: 80vw;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.picture .itemBox .modal .caption{
+  display: block;
+  width: 100vw;
+  text-align: center;
+  color: rgb(204, 204, 204);
+  padding: 10px 0;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  overflow: auto;
+}
+
+.picture .itemBox .modal .caption a{
+  text-decoration: none;
+  color: rgb(53, 134, 255);
+  font-style: italic;
+}
+
+
+.myModelImg, .caption{
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.picture .itemBox .modal .close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: rgb(185, 185, 185);
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+@media(max-width: 900px){
+  .picture .itemBox .modal .myModelImg{
+    margin: 8vh 0 12vh 0;
+    display: block;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+  }
+  .picture .itemBox .modal .close{
+    font-size: 20px;
+  }
+  .picture .itemBox .modal .caption {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.8em;
+  }
+}
+
+
+.picture .itemBox .modal .close:hover, .picture .itemBox .modal .close:focus{
+  color: rgb(255,255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.feedbackSection{
+  margin: 50px auto 20px auto;
+  width: 90vw;
+  border: 1px solid black;
+  padding: 20px 10px;
+}

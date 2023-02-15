@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body{
+    overflow-x: hidden;
+    color: #666;
+    background-color: #fff;
+    line-height: 1.7em;
+    font-weight: 500;
+}
+
+footer{
+  margin-top: 150px;
+}
+
+/*banner*/
+	#about_banner1 {
+		background-image: url(../images/b8.jpg);
+			background-color: whitesmoke;
+			background-attachment: fixed;
+			max-width: 100%;
+			max-height: 600px;
+			padding-top: 70px;
+			padding-bottom: 250px;
+			padding-left: 55px;
+			margin: 0 auto;
+			transition: transform .2s;
+			color: white;
+			animation-name: about_us;
+			animation-duration: 3s;
+			cursor: pointer;
+			margin-bottom: 45px;
+	}
+			@keyframes about_us{
+				from{
+						opacity: 0;
+						width: 95%; height: 500px;
+					}
+				to {opacity: 1; width: 100%; height: 600px;}
+			}
+
+			#ani{
+				display: block;
+				animation-name: txt_about;
+				animation-duration: 6s;
+			}
+
+			@keyframes txt_about{
+				from{ opacity: 0.3;}
+				to{ opacity: 1;}
+			}
+
+	#button_1{
+		margin-left: 65%;
+	}
+
+	.title_about_us{
+		padding-top: 50px;
+		font-weight: 800;
+		font-size: 55px;
+	}
+
+	.title_about_us_sub{
+		font-size: 22px;
+		font-weight: bold;
+
+	}
+
+	blockquote{
+		font-weight: 600;
+	}
+
+
+/*==== hr tag ====*/
+	#hr1 hr, #hr2 hr{
+		width: 60%;
+		height: 4px;
+		background-color: red;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		opacity: 0.9;
+		border-top: red;
+	}
+
+	#hr3 hr, #hr5 hr, #hr6 hr {
+		width: 23%;
+		height: 4px;
+		background-color: red;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		opacity: 0.9;
+		border-top: red;
+		margin-left: 38%;
+	}
+
+	#hr4 hr{
+		width: 25%;
+		height: 4px;
+		background-color: red;
+		margin-top: 35px;
+		margin-bottom: 35px;
+		opacity: 0.9;
+		border-top: red;
+	}
+
+
+/*==== Content ====*/
+	.container-fluid, .container{
+		margin-bottom: 55px;
+	}
+	#img_right img{
+		width: 100%;
+		height: 100%;
+	}
+	.mission, .beaches, .protect{
+		text-align: center;
+	}
+
+	div#background-img {
+		background-image: url(../images/pr30.jpg);
+		background-color: whitesmoke;
+		background-attachment: fixed;
+	}
+
+	div.vision{
+		float: left;
+		padding: 40px;
+	}
+
+	.row .col-md-3 img{
+		width: 110%;
+		height: 450px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.container .big_title {
+		font-weight: 1000;
+		cursor: pointer;
+	}
+
+	.container-fluid .big_title {
+		font-weight: 1000;
+		cursor: pointer;
+	}
+	.small_title{
+		font-weight: 600;
+	}
+
+	.txt_content div{
+		font-size: 17px;
+		font-weight: 500;
+		padding-bottom: 10px;
+	}
+	#col_img_vision{
+		background-color: #fff; opacity: 0.9;
+		margin-left:10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+
+	}
+
+	#protect img{
+		padding:  0px;
+		width: 70%;
+		height: 70%;
+	}
+
+
+  .feedbackSection{
+    margin: 50px auto 20px auto;
+    width: 90vw;
+    border: 1px solid black;
+    padding: 20px 10px;
+  }

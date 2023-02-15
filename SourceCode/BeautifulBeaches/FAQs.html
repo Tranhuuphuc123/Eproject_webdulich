@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <script src="../js/FAQs.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/FAQs.css">
+    <link rel="stylesheet" href="../css/nav.css"> <!-- navbar css -->
+    <link rel="stylesheet" href="../css/Feedback.css"> <!-- feedback css -->
+    <link rel="stylesheet" href="../css/Footer.css"> <!-- footer css -->
+    <title>FAQs</title>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav  id="header">
+     <div class="wrapper" id="nav-menu">
+       <div class="logo">
+         <img src="../images/logo/p4-re.png" alt="">
+         <style>
+            .logo img{
+                 width: 150px;
+                 height: 60px;
+                 border-radius: 60px;
+                 margin-top: 30px;
+                 box-sizing: border-box;
+             }
+         </style>
+       </div>
+       <input type="radio" name="slider" id="menu-btn">
+       <input type="radio" name="slider" id="close-btn">
+       <ul class="nav-links">
+         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+         <li><a href="../BeautifulBeaches/Homepage.html" target="_blank">Home</a></li>
+         <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+         <li>
+          <a href="#" class="desktop-item">Beaches</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Beaches</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../images/logo/logo.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>Asia</header>
+                <ul class="mega-links">
+                  <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                  <li><a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama</a></li>
+                </ul>
+                <header>Australia</header>
+                <ul class="mega-links">
+                  <li><a href="../BeautifulBeaches/Whitehaven.html" target="_blank">Whitehaven</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Asean</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Railay.html" target="_blank">Railay Beach</a></li>
+                    <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Americas</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Kauai.html" target="_blank">Kauai Beach</a></li>
+                </ul>
+                <header>Africa</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi Beach</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+         <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Site map</a></li>
+         <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+         <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+         <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact</a></li>
+       </ul>
+       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+     </div>
+   </nav>
+
+   <!-- sidebar -->
+   <button id="section1">X</button>
+   <div class="sidebar">
+     <a href="#section1"><p>Choosing a trip</p></a>
+     <a href="#section2"><p>Arrival information</p></a>
+     <a href="#section3"><p>Other common questions</p></a>
+   </div>
+
+    <!-- Accordion -->
+    <div class="accordion">
+      <h2>Choosing a trip</h2>
+      <div class="contentBox">
+        <div class="label">Does this site work as a travel site?</div>
+        <div class="content">
+          <p>The answer is yes, our website has a section dedicated to providing information about flights as well as some other means, in addition we also provide a few rest stops along with their prices. This information is not much because this is a website that specializes in providing information about famous beaches in the world, and the service introduction is only part of it. However, we can guarantee the price as well as the reliability of the information provided on our website since we are directly connected to vendors’ inventory systems (airlines, cruise lines, hotels, cars, rail, etc.), you will also be able to retrieve your information on their unique client sites, many of which offer a wealth of information to help you prepare for the trip ahead.</p>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">How do I cancel a trip?</div>
+        <div class="content">
+          <p><a href="../BeautifulBeaches/ContactUs2.html" target="_blank" style="text-decoration: none; color: red;">Contact us<a/> right away. If it’s after normal business hours, please contact the next involved travel supplier (airline, hotel, tour operator, cruise line) to cancel any reservations you will not be able to use. If you purchased travel insurance, please contact the insurance company’s 24-hour line to start the cancellation process and ensure your maximum refund.</p>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label" id="section2">How do I know I can trust this site?</div>
+        <div class="content">
+          <p>BeautifulBeaches is extremely cautious when it comes to choosing our business partners and vendors. This vetting of travel suppliers and support of the ‘good ones’ has given us preferred access to the world’s top trusted suppliers. In turn, they trust us to represent and care for the reputations they have earned over the years and to deliver the same high standard of care to our mutual clients.</p>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">Do I need travel insurance?</div>
+        <div class="content">
+          <p>Travel insurance is available and recommended to protect your travel investment. Many trips, such as tours and cruises, involve non-refundable funds paid months in advance. Travel insurance protects you from losing this investment. Perhaps even more important is the ‘during travel’ coverage and assistance that comes with the top-flight insurance companies we carry.
+          <br><br>
+          Trip interruption due to illness or unforeseen circumstances can be very expensive, and medical care abroad is often not covered by domestic insurance plans. Also, an increasing number of countries require proof of medical insurance for travelers entering their country.</p>
+        </div>
+      </div>
+      <h2>Arrival information</h2>
+      <div class="contentBox">
+        <div class="label" id="section3">What time can I check in at my arrival hotel?</div>
+        <div class="content">
+          <p>Check-in times can vary from hotel to hotel and region to region. Generally, they are between midday and 2pm. If you do arrive earlier, you’ll be able to store your luggage with the hotel and head out to explore for a couple of hours.</p>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">Can I request an early check-in?</div>
+        <div class="content">
+          <p>We can’t confirm an early check-in, but our sales team can assist in booking you a night of pre accommodation at the same hotel. If you don’t wish to pay for the extra night, you can try your luck locally (they may let you in early if the room is free) or you can store your luggage.</p>
+        </div>
+      </div>
+      <h2>Other common questions</h2>
+      <div class="contentBox">
+        <div class="label">Can I opt out of certain activities if I want to?</div>
+        <div class="content">
+          <p>Absolutely. If there are included or optional activities that you don’t wish to participate in, you can do your own thing instead. The exception to this is when we are trekking or travelling from one destination to the next. Please note that if you choose to opt out of an included activity, no reimbursement can be made by BeautifulBeaches.</p>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">What communication facilities will be available?</div>
+        <div class="content">
+          <p>Communication facilities are always improving globally. Many hotels and public places have Wi-Fi so it’s usually possible to keep in touch with home every couple of days, if you so desire.  Phone cards are easy to get your hands on; just make sure your phone is unlocked before you travel. Or in many countries, the cheapest way to make a phone call is at an internet cafe.</p>
+        </div>
+      </div>
+      <div class="contentBox">
+        <div class="label">Will I get internet coverage?</div>
+        <div class="content">
+          <p>Some places have Wi-Fi hot spots everywhere and other places will have no coverage at all. If you stumble into the latter, which is really rare, take the rare chance to just sit back and get to know your fellow travellers the old-fashioned way.
+          </p>
+        </div>
+      </div>
+      <div class="contactUsSection">
+        <p>If you have other questions or discussions, contact our customer service team below</p>
+        <button>
+          <a href="../BeautifulBeaches/ContactUs2.html" target="_blank"style="text-decoration: none; color: white;">Contact us</a>
+        </button>
+      </div>
+    </div>
+
+    <!-- feedback section -->
+    <div class="feedbackSection">
+      <div id="beforeFb">
+        <div class="fbQuestion">
+          <p>Was this site helpful?</p>
+          <input type="radio" name="fb">
+          <input type="radio" name="fb">
+        </div>
+        <form>
+          <p>Tell us why...</p>
+          <textarea style="resize: none; width: 100%; height: 150px;"></textarea>
+          <i>Please note: we cannot respond to any comments made here directly. Please contact us if you need help or have questions.</i>
+          <div class="fbButton" onclick="FeedbackText()">Send feedback</div>
+        </form>
+      </div>
+      <div id="afterFb">
+        Thank you for taking the time to provide feedback
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="icon">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+        <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Sitemap</a></li>
+        <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+        <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact us</a></li>
+      </ul>
+      <p><i class="fa-regular fa-copyright"></i>2022 Beautiful Beaches eProject | All rights reserved</p>
+    </footer>
+
+    <!-- feedback js -->
+    <script>
+      let before = document.getElementById('beforeFb');
+      let after = document.getElementById('afterFb');
+      after.style.display = "none";
+      function FeedbackText(){
+        before.style.display = "none";
+        after.style.display = "block";
+      }
+    </script>
+
+
+
+
+     <!--====== xây dựng div quảng cáo========-->
+     <div id="quang__cao">
+      <div id="tat__qc">
+          <a href="#" onclick="nut_tat()">turn off ads x</a>
+      </div>
+      <div id="pic__qc">
+          <a href="https://www.escape.com.au/" target="_blank">
+              <img src="../images/anh_quang_cao/02.jpg" alt="">
+          </a>
+      </div>
+      <div id="mo__qc">
+          <a href="#" onclick="nut_mo()">turn on ads</a>
+      </div>
+  </div>
+  <!--định dạng style quảng cáo-->
+    <style>
+          #quang__cao{
+              position: fixed;
+              left: 1px;
+              bottom: 0px;
+              width: 444px;
+              z-index: 1;
+              /*hiệu ứng z-index tránh thuộc tính bị đè ẩn lên nhau*/
+          }
+
+          #tat__qc, #mo__qc{
+              width: 180px;
+              padding: 5px;
+              background: rgb(4, 28, 65);
+              text-align: left;
+          }
+          #mo__qc{
+              display: none;
+          }
+          #quang__cao a{
+              color: #fff;
+              text-decoration: none;
+          }
+          #quang__cao a:hover{
+              text-decoration: underline;
+          }
+    </style>
+    <!--đoạn script thẻ quảng cáo-->
+      <script>
+            function nut_tat(){
+              document.getElementById("tat__qc").style.display="none";
+              document.getElementById("pic__qc").style.display="none";
+              /*khi tắt quảng cáo thì ảnh và nút tat ẩn còn nút mở sẽ hiện*/
+              document.getElementById("mo__qc").style.display="block";
+            }
+            function nut_mo(){
+              document.getElementById("tat__qc").style.display="block";
+              document.getElementById("pic__qc").style.display="block";
+              /*khi mở quảng cáo thì ảnh và nút tắt mở còn nút mở sẽ ẩn*/
+              document.getElementById("mo__qc").style.display="none";
+            }
+      </script>
+
+  <!--=========end div quảng cáo=========-->
+
+
+  </body>
+</html>

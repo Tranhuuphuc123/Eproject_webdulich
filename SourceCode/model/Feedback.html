@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Feedback.css">
+  </head>
+  <body>
+    <div class="feedbackSection">
+      <div id="beforeFb">
+        <div class="fbQuestion">
+          <p>Was this site helpful?</p>
+          <input type="radio" name="fb">
+          <input type="radio" name="fb">
+        </div>
+        <form>
+          <p>Tell us why...</p>
+          <textarea style="resize: none; width: 100%; height: 150px;"></textarea>
+          <i>Please note: we cannot respond to any comments made here directly. Please contact us if you need help or have questions.</i>
+          <div class="fbButton" onclick="FeedbackText()">Send feedback</div>
+        </form>
+      </div>
+      <div id="afterFb">
+        Thank you for taking the time to provide feedback
+      </div>
+    </div>
+    <script>
+      let before = document.getElementById('beforeFb');
+      let after = document.getElementById('afterFb');
+      after.style.display = "none";
+      function FeedbackText(){
+        before.style.display = "none";
+        after.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

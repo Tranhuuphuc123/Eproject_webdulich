@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+.feedbackSection div{
+  margin-bottom: 10px;
+}
+
+.feedbackSection .fbQuestion{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.feedbackSection .fbQuestion input{
+  position: relative;
+  width: 15px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-right: 50px;
+
+}
+
+.feedbackSection .fbQuestion input:nth-child(2n)::before{
+  content:'Yes';
+  position: absolute;
+  font-size: 18px;
+  left: 10px;
+  font-weight: 400;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.feedbackSection .fbQuestion input:nth-child(2n+1)::before{
+  content:'No';
+  position: absolute;
+  font-size: 18px;
+  left: 10px;
+  font-weight: 400;
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+
+.feedbackSection .fbQuestion input:checked::before,
+.feedbackSection .fbQuestion input:hover::before{
+  background: rgb(14, 57, 89);
+  color: white;
+}
+
+.feedbackSection form .fbButton{
+  background: rgb(14, 57, 89);
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: 170px;
+  text-align: center;
+  color: white;
+}
+
+.feedbackSection form .fbButton:hover{
+  background: rgb(54, 97, 129);
+}

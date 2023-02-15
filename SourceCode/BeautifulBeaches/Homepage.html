@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=======================FONT Icon=======================-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="../lib/swipper/swiper-bundle.min.css">
+
+        <!--=============== CSS CÁ NHÂN ===============-->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/slider.css">
+        <link rel="stylesheet" href="../css/sub-sea.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/Footer.css"> <!-- footer css -->
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          user-select: none;
+        }
+        </style>
+        <title>BeautifulBeaches</title>
+    </head>
+    <body>
+      <!--====thẻ nav mục header=====-->
+      <nav  id="header">
+       <div class="wrapper" id="nav-menu">
+         <div class="logo">
+           <img src="../images/logo/p4-re.png" alt="">
+           <style>
+              .logo img{
+                   width: 150px;
+                   height: 60px;
+                   border-radius: 60px;
+                   margin-top: 30px;
+                   box-sizing: border-box;
+               }
+           </style>
+         </div>
+         <input type="radio" name="slider" id="menu-btn">
+         <input type="radio" name="slider" id="close-btn">
+         <ul class="nav-links">
+           <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+           <li><a href="../BeautifulBeaches/Homepage.html" target="_blank">Home</a></li>
+           <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+           <li>
+            <a href="#" class="desktop-item">Beaches</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Beaches</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <img src="../images/logo/logo.jpg" alt="">
+                </div>
+                <div class="row">
+                  <header>Asia</header>
+                  <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                    <li><a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama</a></li>
+                  </ul>
+                  <header>Australia</header>
+                  <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Whitehaven.html" target="_blank">Whitehaven</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Asean</header>
+                  <ul class="mega-links">
+                      <li><a href="../BeautifulBeaches/Railay.html" target="_blank">Railay Beach</a></li>
+                      <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Americas</header>
+                  <ul class="mega-links">
+                      <li><a href="../BeautifulBeaches/Kauai.html" target="_blank">Kauai Beach</a></li>
+                  </ul>
+                  <header>Africa</header>
+                  <ul class="mega-links">
+                      <li><a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi Beach</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+           <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Site map</a></li>
+           <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+           <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+           <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact</a></li>
+         </ul>
+         <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+       </div>
+     </nav>
+        <!--=========end nav mục header============-->
+
+
+
+
+        <main class="main">
+             <!--==================== Trang Slider ảnh Home ====================-->
+            <div class="slider">
+                <!-- fade css -->
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>HALONG BAY</h1>
+                        <p>Quang Ninh Island<br>one of the ten most beautiful beaches on the planet</p>
+                        <a href="../BeautifulBeaches/Halongbay.html" target="_blank" class="button" target="_blank">Explore</a>
+                    </div>
+                    <img src="../images/anh_slider/halongbay.jpg" style="width: 100%; height: 100%;">
+
+                   <!--menu con trong slider-->
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">HALONG BAY</span>
+                            <a href="../BeautifulBeaches/Halongbay.html" target="_blank" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="../images/anh_slider/halongbay.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>NUNGWI BEACHES</h1>
+                        <p>Tanzzania<br>one of the ten most beautiful beaches on the planet</p>
+                        <a href="../BeautifulBeaches/Nungwi.html" target="_blank" class="button">Explore</a>
+                    </div>
+                    <img src="../images/anh_slider/Bungwi.jpg" style="width: 100%; height: 100%;">
+
+                     <!--menu con trong slider-->
+                     <div class="home__info">
+                        <div>
+                            <span class="home__info-title">NUNGWI BEACHES</span>
+                            <a href="../BeautifulBeaches/Nungwi.html" target="_blank" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="../images/anh_slider/Bungwi.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>JODOGAHAMA BEACHES</h1>
+                        <p>Japan<br>One of the ten most beautiful beaches on the planet</p>
+                        <a href="../BeautifulBeaches/jodogahama.html" target="_blank" class="button">Explore</a>
+                    </div>
+                    <img src="../images/anh_slider/jodogahama.jpg" style="width: 100%; height: 100%;">
+
+                    <!--menu con trong slider-->
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">JODOGAHAMA BEACHES</span>
+                            <a href="../BeautifulBeaches/jodogahama.html" target="_blank" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="../images/anh_slider/jodogahama.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>KAUAI BEACHES</h1>
+                        <p>Hawaii<br>One of the ten most beautiful beaches on the planet</p>
+                        <a href="../BeautifulBeaches/Kauai.html" target="_blank" class="button">Explore</a>
+                    </div>
+                    <img src="../images/anh_slider/kaunai.jpg" style="width: 100%; height: 100%;">
+
+                    <!--menu con trong slider-->
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">KAUNAI BEACHES</span>
+                            <a href="../BeautifulBeaches/Kauai.html" target="_blank" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="../images/anh_slider/kaunai.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>WHITEHAVEN BEACH</h1>
+                        <p>Australia<br>One of the ten most beautiful beaches on the planet</p>
+                        <a href="../BeautifulBeaches/Whitehaven.html" target="_blank" class="button">Explore</a>
+                    </div>
+                    <img src="../images/anh_slider/Whitehaven-Beach.jpg" style="width: 100%; height: 100%;">
+
+                    <!--menu con trong slider-->
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">WHITEHAVEN BEACH</span>
+                            <a href="../BeautifulBeaches/Whitehaven.html" target="_blank" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="../images/anh_slider/Whitehaven-Beach.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="myslide fade">
+                    <div class="txt">
+                        <h1>RAILAY BEACH</h1>
+                        <p>Thailand<br>One of the ten most beautiful beaches on the planet</p>
+                        <a href="../BeautifulBeaches/Railay.html" target="_blank" class="button">Explore</a>
+                    </div>
+                    <img src="../images/anh_slider/railay.jpg" style="width: 100%; height: 100%;">
+
+                    <!--menu con trong slider-->
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">RAILAY BEACH</span>
+                            <a href="../BeautifulBeaches/Railay.html" target="_blank" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="../images/anh_slider/railay.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+                <!-- /fade css -->
+
+
+
+                <!-- onclick js -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="dotsbox" style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+                <!-- /onclick js -->
+            </div>
+
+            <!--==================== ABOUT giới thiệu ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">ABOUT US <br> <span style="color:blue;">BEAUTIFULBEACHES</span></h2>
+                        <p class="about__description">
+                            Today, with the advancement of technology and the internet, we can almost find all the information instantly.<br>
+                            The tourism industry is one of the traditional industries that have made good use of the combination with technologyto promote its image. That's why there are countless articles can be found when searching the internet for a beach.<br>
+                            But most of them introduce services but do not cover all the beautiful beaches that users are forced to synthesize and searchfrom many different sources...</br>
+                        </p>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="../images/10sea/halongbay.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="../images/10sea/Whitehaven-Beach.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                    <style>
+                      @media (max-width: 768px){
+                        .about__img-one, .about__img-two{
+                          height: 300px;
+                          width: 48vw;
+                        }
+                      }
+                    </style>
+                </div>
+            </section>
+
+
+
+             <!--================ SWIPPER ẢNH ===========   ========-->
+             <section class="discover section" id="discover">
+                 <h2 class="section__title">ranking the most beautiful beaches on the planet <br> (10 most beautiful beaches on the planet)</h2>
+
+                 <div class="discover__container container swiper-container">
+                     <div class="swiper-wrapper">
+                         <!--==================== Ảnh 1 ====================-->
+                         <div class="discover__card swiper-slide">
+                             <div class="tooltip" >
+                                 <a href="../BeautifulBeaches/Halongbay.html" target="_blank">
+                                     <img src="../images/10sea/halongbay.jpg" alt="" class="discover__img">
+                                 </a>
+                                 <span class="tooltiptext">scroll image the left</span>
+                             </div>
+                             <div class="discover__data">
+                                 <h2 class="discover__title">Halong bay (Viet Nam)</h2>
+                                 <span class="discover__description">24 tours available</span>
+                             </div>
+                         </div>
+
+                         <!--==================== Ảnh 2 ====================-->
+                         <div class="discover__card swiper-slide">
+                             <a href="../BeautifulBeaches/Whitehaven.html" target="_blank">
+                                 <img src="../images/10sea/Whitehaven-Beach.jpg" alt="" class="discover__img">
+                             </a>
+
+                             <div class="discover__data">
+                                 <h2 class="discover__title">Whitehaven (Australia)</h2>
+                                 <span class="discover__description">32 tours available</span>
+                             </div>
+                         </div>
+
+                         <!--==================== Ảnh 3 ====================-->
+                         <div class="discover__card swiper-slide">
+                             <a href="../BeautifulBeaches/Kauai.html" target="_blank">
+                                 <img src="../images/10sea/kaunai.jpg" alt="" class="discover__img">
+                             </a>
+                             <div class="discover__data">
+                                 <h2 class="discover__title">kauai (Hawaii)</h2>
+                                 <span class="discover__description">18 tours available</span>
+                             </div>
+                         </div>
+
+                         <!--==================== Ảnh 4 ====================-->
+                         <div class="discover__card swiper-slide">
+                             <a href="../BeautifulBeaches/Nungwi.html" target="_blank">
+                                 <img src="../images/10sea/nungwi.jpg" alt="" class="discover__img">
+                             </a>
+                             <div class="discover__data">
+                                 <h2 class="discover__title">Nungwi (Tanzzania)</h2>
+                                 <span class="discover__description">32 tours available</span>
+                             </div>
+                         </div>
+                          <!--==================== Ảnh 5 ====================-->
+                          <div class="discover__card swiper-slide">
+                             <a href="../BeautifulBeaches/Railay.html" target="_blank">
+                                 <img src="../images/10sea/railay-beach.jpg" alt="" class="discover__img">
+                             </a>
+                             <div class="discover__data">
+                                 <h2 class="discover__title">railay-beach (Thailand)</h2>
+                                 <span class="discover__description">24 tours available</span>
+                             </div>
+                         </div>
+
+                         <!--==================== Ảnh 6 ====================-->
+                         <div class="discover__card swiper-slide">
+                             <div class="tooltip">
+                                 <a href="../BeautifulBeaches/jodogahama.html" target="_blank">
+                                     <img src="../images/10sea/jodogahama.jpg" alt="" class="discover__img">
+                                 </a>
+                                 <span class="tooltiptext">scroll image the right</span>
+                             </div>
+                             <div class="discover__data">
+                                 <h2 class="discover__title">jodogahama (Japan)</h2>
+                                 <span class="discover__description">15 tours available</span>
+                             </div>
+                         </div>
+
+                     </div>
+                 </div>
+                 <div class="swiper-pagination"></div>
+             </section>
+
+
+
+
+
+
+            <!--==================== SỨ MỆNH CÔNG TY MANG ĐẾN ====================-->
+            <section class="experience section">
+                <h2 class="section__title">With Our Experience <br> We Will Serve You<br>
+                   <span class="kieu__chu"> with the experience of a leading tourism promotion company. <br>
+                    We are committed to providing the best experience for you and your family</span>
+                    <style>
+                        .kieu__chu{
+                            text-align: center;
+                            font-size: 20px;
+                            text-align: justify;
+                        }
+                    </style>
+                </h2>
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">20</h2>
+                            <span class="experience__description">Year <br> Experience</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">75</h2>
+                            <span class="experience__description">Complete <br> tours</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">650+</h2>
+                            <span class="experience__description">Tourist <br> Destination</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="../images/10sea/Jodogahama.jpg" alt="" class="experience__img-one">
+                        </div>
+
+                        <div class="experience__overlay">
+                            <img src="../images/10sea/railay-beach.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!--==================== List of Beaches  ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">Choose Your Place</h2>
+
+              <!--===hàng 01====-->
+                    <div class="place__container container grid">
+                        <!--==================== Sea 1 ====================-->
+                        <div class="place__card">
+                        <img src="../images/10sea/Jodogahama.jpg" alt="" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Jodogahama</h3>
+                                <span class="place__subtitle">Japan</span>
+                                <span><i class="far fa-clock"></i>3 days travel</span><br>
+                                <span><i class="fas fa-map-marker-alt"></i>Japan</span>
+                            </div>
+                        </div>
+
+                        <a href="../BeautifulBeaches/jodogahama.html" target="_blank">
+                          <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                          </button>
+                        </a>
+                    </div>
+
+                    <!--==================== Sea 2 ====================-->
+                    <div class="place__card">
+                        <img src="../images/10sea/nungwi.jpg" alt="" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Nungwi</h3>
+                                <span class="place__subtitle">Tanzzania</span>
+                                <span><i class="far fa-clock"></i>3 days travel</span><br>
+                                <span><i class="fas fa-map-marker-alt"></i>Tanzzania</span>
+                            </div>
+                        </div>
+
+
+                        <a href="../BeautifulBeaches/Nungwi.html" target="_blank">
+                          <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                          </button>
+                        </a>
+                    </div>
+
+                    <!--==================== Sea 3 ====================-->
+                    <div class="place__card">
+                        <img src="../images/10sea/railay-beach.jpg" alt="" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Railay beaches</h3>
+                                <span class="place__subtitle">EE.UU</span>
+                                <span><i class="far fa-clock"></i>4 days travel</span><br>
+                                <span><i class="fas fa-map-marker-alt"></i>Thailand</span>
+                            </div>
+                        </div>
+
+                        <a href="../BeautifulBeaches/Railay.html" target="_blank">
+                          <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                          </button>
+                        </a>
+                    </div>
+
+                    <!--==================== Sea 4 ====================-->
+                    <div class="place__card">
+                        <img src="../images/10sea/kaunai.jpg" alt="" class="place__img">
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Kauai beaches</h3>
+                                <span class="place__subtitle">Hawaii</span>
+                                <span><i class="far fa-clock"></i>6 days travel</span><br>
+                                <span><i class="fas fa-map-marker-alt"></i>America</span>
+                            </div>
+                        </div>
+
+                        <a href="../BeautifulBeaches/Kauai.html" target="_blank">
+                          <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                          </button>
+                        </a>
+                    </div>
+
+                    <!--==================== Sea 5 ====================-->
+                    <div class="place__card">
+                        <img src="../images/10sea/halongbay.jpg" alt="" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Halong Bay</h3>
+                                <span class="place__subtitle">Quang Ninh</span>
+                                <span><i class="far fa-clock"></i>2 days travel</span><br>
+                                <span><i class="fas fa-map-marker-alt"></i>Viet Nam</span>
+                            </div>
+                        </div>
+
+                        <a href="../BeautifulBeaches/Halongbay.html" target="_blank">
+                          <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                          </button>
+                        </a>
+                    </div>
+                    <!--==================== Sea 6 ====================-->
+                    <div class="place__card">
+                        <img src="../images/10sea/Whitehaven-Beach.jpg" alt="" class="place__img">
+
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">Whitehaven</h3>
+                                <span class="place__subtitle">Australia</span>
+                                <span><i class="far fa-clock"></i>6 days travel</span><br>
+                                <span><i class="fas fa-map-marker-alt"></i>Australia</span>
+                            </div>
+                        </div>
+
+                        <a href="../BeautifulBeaches/Nungwi.html" target="_blank">
+                          <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                          </button>
+                        </a>
+                    </div>
+               </div>
+            </section>
+            <style>
+              #place .place__container{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+              }
+            </style>
+
+
+             <!--==================== VIDEO Quảng Cáo ====================-->
+            <section class="video section">
+                <h2 class="section__title">Video Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Let's explore the beautiful beaches on the planet
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="../video/video.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--====== xây dựng div quảng cáo========-->
+            <div id="quang__cao">
+                <div id="tat__qc">
+                    <a href="#" onclick="nut_tat()">turn off ads x</a>
+                </div>
+                <div id="pic__qc">
+                    <a href="https://www.escape.com.au/" target="_blank">
+                        <img src="../images/anh_quang_cao/03.jpg" alt="">
+                    </a>
+                </div>
+                <div id="mo__qc">
+                    <a href="#" onclick="nut_mo()">turn on ads</a>
+                </div>
+            </div>
+            <!--định dạng style quảng cáo-->
+               <style>
+                    #quang__cao{
+                        position: fixed;
+                        left: 1px;
+                        bottom: 0px;
+                        width: 444px;
+                        z-index: 1;
+                        /*hiệu ứng z-index tránh thuộc tính bị đè ẩn lên nhau*/
+                    }
+
+                    #tat__qc, #mo__qc{
+                        width: 180px;
+                        padding: 5px;
+                        background: rgb(4, 28, 65);
+                        text-align: left;
+                    }
+                    #mo__qc{
+                        display: none;
+                    }
+                    #quang__cao a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                    #quang__cao a:hover{
+                        text-decoration: underline;
+                    }
+               </style>
+               <!--đoạn script thẻ quảng cáo-->
+                 <script>
+                      function nut_tat(){
+                         document.getElementById("tat__qc").style.display="none";
+                         document.getElementById("pic__qc").style.display="none";
+                         /*khi tắt quảng cáo thì ảnh và nút tat ẩn còn nút mở sẽ hiện*/
+                         document.getElementById("mo__qc").style.display="block";
+                         event.preventDefault();
+                      }
+                      function nut_mo(){
+                         document.getElementById("tat__qc").style.display="block";
+                         document.getElementById("pic__qc").style.display="block";
+                         /*khi mở quảng cáo thì ảnh và nút tắt mở còn nút mở sẽ ẩn*/
+                         document.getElementById("mo__qc").style.display="none";
+                         event.preventDefault();
+                      }
+                 </script>
+
+            <!--=========end div quảng cáo=========-->
+
+
+
+            <!--==================== SUBSCRIBE liên kết trang Submit ====================-->
+            <section class="subscribe section">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="subscribe__description">Please send your feedback to us
+                        </p>
+
+                        <form action="" class="subscribe__form">
+                            <input type="text" placeholder="Enter email" class="subscribe__input">
+
+                            <button class="button">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!----==============-->
+        </main>
+
+
+
+
+        <!--==================== FOOTER ====================-->
+        <footer>
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+          <ul class="icon">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+          </ul>
+          <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+            <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Sitemap</a></li>
+            <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+            <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact us</a></li>
+          </ul>
+          <p><i class="fa-regular fa-copyright"></i>2022 Beautiful Beaches eProject | All rights reserved</p>
+        </footer>
+        <style>
+          footer{
+            margin-top: 150px;
+          }
+        </style>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="../lib/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="../lib/swipper/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="../js/main.js"></script>
+        <script src="../js/slider.js"></script>
+    </body>
+</html>

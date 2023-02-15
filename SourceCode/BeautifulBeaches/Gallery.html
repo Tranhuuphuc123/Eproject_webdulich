@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <script src="../js/Portfolio.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/Portfolio.css">
+    <link rel="stylesheet" href="../css/nav.css"> <!-- navbar css -->
+    <link rel="stylesheet" href="../css/Feedback.css"> <!-- feedback css -->
+    <link rel="stylesheet" href="../css/Footer.css"> <!-- footer css -->
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav  id="header">
+     <div class="wrapper" id="nav-menu">
+       <div class="logo">
+         <img src="../images/logo/p4-re.png" alt="">
+         <style>
+            .logo img{
+                 width: 150px;
+                 height: 60px;
+                 border-radius: 60px;
+                 margin-top: 30px;
+                 box-sizing: border-box;
+             }
+         </style>
+       </div>
+       <input type="radio" name="slider" id="menu-btn">
+       <input type="radio" name="slider" id="close-btn">
+       <ul class="nav-links">
+         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+         <li><a href="../BeautifulBeaches/Homepage.html" target="_blank">Home</a></li>
+         <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+         <li>
+          <a href="#" class="desktop-item">Beaches</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Beaches</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../images/logo/logo.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>Asia</header>
+                <ul class="mega-links">
+                  <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                  <li><a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama</a></li>
+                </ul>
+                <header>Australia</header>
+                <ul class="mega-links">
+                  <li><a href="../BeautifulBeaches/Whitehaven.html" target="_blank">Whitehaven</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Asean</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Railay.html" target="_blank">Railay Beach</a></li>
+                    <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Americas</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Kauai.html" target="_blank">Kauai Beach</a></li>
+                </ul>
+                <header>Africa</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi Beach</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+         <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Site map</a></li>
+         <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+         <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+         <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact</a></li>
+       </ul>
+       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+     </div>
+   </nav>
+
+    <!-- Portfolio gallery -->
+    <section id="Portfolio">
+      <ul>
+        <li class="list focus" id="All" data-filter="all">All</li>
+        <li class="list" data-filter="Halong">Halong bay</li>
+        <li class="list" data-filter="jodogahama">Jodogahama</li>
+        <li class="list" data-filter="kauai">Kauai</li>
+        <li class="list" data-filter="nungwi">Nungwi</li>
+        <li class="list" data-filter="railay">Railay</li>
+        <li class="list" data-filter="whitehaven">Whitehaven</li>
+      </ul>
+      <div class="picture">
+
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/fullview1.jpg">
+          <p class="inFo">
+            Image of the bay from above -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/fullview2.jpg">
+          <p class="inFo">
+            Image of the bay from above 2 -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/fullview3.jpg">
+          <p class="inFo">
+            Image of the bay from above 3 -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/sideview.jpg">
+          <p class="inFo">
+            Image of the bay near the ground -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/sideview2.jpg">
+          <p class="inFo">
+            Image of the bay near the ground 2 -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/sungsotcave.jpg">
+          <p class="inFo">
+            Interior of Sung Sot Cave -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/sungsotcave2.jpg">
+          <p class="inFo">
+            Interior of Sung Sot Cave 2 -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/thiencungcave.jpg">
+          <p class="inFo">
+            Pillars propping against the roof in Thien Cung Cave -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/kayak.jpg">
+          <p class="inFo">
+            Kayak in Halong bay -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/Gallery/HalongBay/Duthuyen.jpg">
+          <p class="inFo">
+            Orchid Trendy Cruise -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="jodogahama">
+          <img class="myImg" src="../images/Gallery/Jodogahama/frontview.jpg">
+          <p class="inFo">
+            Calm, beautiful bay that resembles a Japanese garden -
+            <a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama beach</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="jodogahama">
+          <img class="myImg" src="../images/Gallery/Jodogahama/frontview2.jpg">
+          <p class="inFo">
+            This picturesque stretch of beach is located in the Sanriku Recovery National Park near Miyako City -
+            <a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama beach</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="jodogahama">
+          <img class="myImg" src="../images/Gallery/Jodogahama/frontview3.jpg">
+          <p class="inFo">
+            This is a ria style coastline (ria is a valley land mass partially submerged in water) -
+            <a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama beach</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="jodogahama">
+          <img class="myImg" src="../images/Gallery/Jodogahama/hotel.jpg">
+          <p class="inFo">
+            Jodogahama Park Hotel, Miyako -
+            <a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama beach</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="jodogahama">
+          <img class="myImg" src="../images/Gallery/Jodogahama/NagisateiTaroan.jpg">
+          <p class="inFo">
+            Nagisatei Taroan -
+            <a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama beach</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="jodogahama">
+          <img class="myImg" src="../images/Gallery/Jodogahama/cruise.jpg">
+          <p class="inFo">
+            Miyako Jodogahama boat cruise -
+            <a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama beach</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="kauai">
+          <img class="myImg" src="../images/Gallery/kauai/hanaleibay.jpg">
+          <p class="inFo">
+            Hanalei Bay, the largest bay on the north shore of Kauaʻi island -
+            <a href="../BeautifulBeaches/kauai.html" target="_blank">Kauai</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="kauai">
+          <img class="myImg" src="../images/Gallery/kauai/sunset.jpg">
+          <p class="inFo">
+            Sunset In Kauai -
+            <a href="../BeautifulBeaches/kauai.html" target="_blank">Kauai</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="kauai">
+          <img class="myImg" src="../images/Gallery/kauai/resort.jpg">
+          <p class="inFo">
+            Grand Hyatt Kauai Resort & Spa -
+            <a href="../BeautifulBeaches/kauai.html" target="_blank">Kauai</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="kauai">
+          <img class="myImg" src="../images/Gallery/kauai/resort2.jpg">
+          <p class="inFo">
+            Kauai Beach Resort 1110 -
+            <a href="../BeautifulBeaches/kauai.html" target="_blank">Kauai</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="kauai">
+          <img class="myImg" src="../images/Gallery/kauai/whalewatching.avif">
+          <p class="inFo">
+            Whale Watching on Kauai from December to May -
+            <a href="../BeautifulBeaches/kauai.html" target="_blank">Kauai</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="kauai">
+          <img class="myImg" src="../images/Gallery/kauai/scuba.jpg">
+          <p class="inFo">
+            Snorkeling and Scuba on Kauai -
+            <a href="../BeautifulBeaches/kauai.html" target="_blank">Kauai</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="nungwi">
+          <img class="myImg" src="../images/Gallery/nungwi/frontview.jpg">
+          <p class="inFo">
+            Nungwi beach with white sand -
+            <a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="nungwi">
+          <img class="myImg" src="../images/Gallery/nungwi/frontview2.jpg">
+          <p class="inFo">
+            A place with a long fishing tradition -
+            <a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="nungwi">
+          <img class="myImg" src="../images/Gallery/nungwi/DoubleTreeResortbyHiltonZanzibar.jpg">
+          <p class="inFo">
+            DoubleTree Resort by Hilton Zanzibar -
+            <a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="nungwi">
+          <img class="myImg" src="../images/Gallery/nungwi/EssqueZaluZanzibar.jpg">
+          <p class="inFo">
+            Essque Zalu Zanzibar -
+            <a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="nungwi">
+          <img class="myImg" src="../images/Gallery/nungwi/DolphinTour.jpg">
+          <p class="inFo">
+            Dolphin Tour and Snorkeling at Mnemba Island reef 1 -
+            <a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="nungwi">
+          <img class="myImg" src="../images/Gallery/nungwi/Snorkeling.jpg">
+          <p class="inFo">
+            Dolphin Tour and Snorkeling at Mnemba Island reef 2 -
+            <a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="railay">
+          <img class="myImg" src="../images/Gallery/railay/frontview.jpg">
+          <p class="inFo">
+            Front view of Railay beach -
+            <a href="../BeautifulBeaches/Railay.html" target="_blank">Railay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="railay">
+          <img class="myImg" src="../images/Gallery/railay/AerialView.jpg">
+          <p class="inFo">
+            Aerial view of Railay beach -
+            <a href="../BeautifulBeaches/Railay.html" target="_blank">Railay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="railay">
+          <img class="myImg" src="../images/Gallery/railay/AerialView2.webp">
+          <p class="inFo">
+            Aerial view of Railay beach 2 -
+            <a href="../BeautifulBeaches/Railay.html" target="_blank">Railay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="railay">
+          <img class="myImg" src="../images/Gallery/railay/boat.jpg">
+          <p class="inFo">
+            Boat parking at Railay beach -
+            <a href="../BeautifulBeaches/Railay.html" target="_blank">Railay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="railay">
+          <img class="myImg" src="../images/Gallery/railay/localfood.jpg">
+          <p class="inFo">
+            Fresh seafood and Rasta vibes on Railay Beach (Krabi Province) -
+            <a href="../BeautifulBeaches/Railay.html" target="_blank">Railay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="railay">
+          <img class="myImg" src="../images/Gallery/railay/monkey.jpg">
+          <p class="inFo">
+            Dusky leaf langur monkey trachypithecus obscurus hang and eat green leaves on the tree at Railay beach -
+            <a href="../BeautifulBeaches/Railay.html" target="_blank">Railay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="../images/Gallery/whitehaven/view.jpg">
+          <p class="inFo">
+            White sand and clear blue sea at Whitehaven beach -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Whitehaven</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="../images/Gallery/whitehaven/view2.png">
+          <p class="inFo">
+            Panorama of beautiful rainforest surrounded by clear blue sea at Whitehaven beach -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Whitehaven</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="../images/Gallery/whitehaven/view3.jpg">
+          <p class="inFo">
+            Whitsundays Helicopter Scenic Flight & Cruise -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Whitehaven</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="../images/Gallery/whitehaven/view4.jpg">
+          <p class="inFo">
+            Thundercat offers an exhilarating ride around the Whitsunday Islands all in one day -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Whitehaven</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="../images/Gallery/whitehaven/view5.jpg">
+          <p class="inFo">
+            75 Minute Scenic Helicopter Flight Over Whitsundays, Heart Reef -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Whitehaven</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="../images/Gallery/whitehaven/seafood.jpg">
+          <p class="inFo">
+            Fresh seafood at Whitehaven beach restaurants -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Whitehaven</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="../images/Gallery/whitehaven/scuba.jpg">
+          <p class="inFo">
+            Scuba diving to see the diverse marine ecosystem at Whitehaven -
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Whitehaven</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+            <!-- Next and previous buttons -->
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- feedback section -->
+    <div class="feedbackSection">
+      <div id="beforeFb">
+        <div class="fbQuestion">
+          <p>Was this site helpful?</p>
+          <input type="radio" name="fb">
+          <input type="radio" name="fb">
+        </div>
+        <form>
+          <p>Tell us why...</p>
+          <textarea style="resize: none; width: 100%; height: 150px;"></textarea>
+          <i>Please note: we cannot respond to any comments made here directly. Please contact us if you need help or have questions.</i>
+          <div class="fbButton" onclick="FeedbackText()">Send feedback</div>
+        </form>
+      </div>
+      <div id="afterFb">
+        Thank you for taking the time to provide feedback
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="icon">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+        <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Sitemap</a></li>
+        <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+        <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact us</a></li>
+      </ul>
+      <p><i class="fa-regular fa-copyright"></i>2022 Beautiful Beaches eProject | All rights reserved</p>
+    </footer>
+
+    <!-- feedback js -->
+    <script>
+      let before = document.getElementById('beforeFb');
+      let after = document.getElementById('afterFb');
+      after.style.display = "none";
+      function FeedbackText(){
+        before.style.display = "none";
+        after.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

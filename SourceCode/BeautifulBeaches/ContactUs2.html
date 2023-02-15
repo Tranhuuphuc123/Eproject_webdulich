@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <script src="../js/ContactUs2.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/ContactUs2.css">
+    <link rel="stylesheet" href="../css/nav.css"> <!-- navbar css -->
+    <link rel="stylesheet" href="../css/Footer.css"> <!-- footer css -->
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav  id="header">
+     <div class="wrapper" id="nav-menu">
+       <div class="logo">
+         <img src="../images/logo/p4-re.png" alt="">
+         <style>
+            .logo img{
+                 width: 150px;
+                 height: 60px;
+                 border-radius: 60px;
+                 margin-top: 30px;
+                 box-sizing: border-box;
+             }
+         </style>
+       </div>
+       <input type="radio" name="slider" id="menu-btn">
+       <input type="radio" name="slider" id="close-btn">
+       <ul class="nav-links">
+         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+         <li><a href="../BeautifulBeaches/Homepage.html" target="_blank">Home</a></li>
+         <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+         <li>
+          <a href="#" class="desktop-item">Beaches</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Beaches</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="../images/logo/logo.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>Asia</header>
+                <ul class="mega-links">
+                  <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                  <li><a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama</a></li>
+                </ul>
+                <header>Australia</header>
+                <ul class="mega-links">
+                  <li><a href="../BeautifulBeaches/Whitehaven.html" target="_blank">Whitehaven</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Asean</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Railay.html" target="_blank">Railay Beach</a></li>
+                    <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Americas</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Kauai.html" target="_blank">Kauai Beach</a></li>
+                </ul>
+                <header>Africa</header>
+                <ul class="mega-links">
+                    <li><a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi Beach</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+         <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Site map</a></li>
+         <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+         <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+         <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact</a></li>
+       </ul>
+       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+     </div>
+   </nav>
+
+    <!-- contact part -->
+    <div class="contactUs">
+      <div class="title">
+        <h2>Get in touch</h2>
+        <h6>Want to get in touch? We'd love to here from you. Here's how you can reach us...</h6>
+      </div>
+      <div class="box">
+        <!-- form -->
+        <div class="contact form">
+          <h3>Send a Message</h3>
+          <form>
+            <div class="formBox">
+              <div class="row50">
+                <div class="inputBox">
+                  <span>First Name</span>
+                  <input class="inputEl" type="text" name="">
+                </div>
+                <div class="inputBox">
+                  <span>Last Name</span>
+                  <input class="inputEl" type="text" name="">
+                </div>
+              </div>
+
+              <div class="row50">
+                <div class="inputBox">
+                  <span>Email <span id="emailInvalid">Your email is invalid</span></span>
+                  <input id="emailInput" class="inputEl" type="text" name="">
+                </div>
+                <div class="inputBox">
+                  <span>Mobile <span id="phoneInvalid">Phone number invalid</span></span>
+                  <input id="phoneInput" class="inputEl" type="text" name="">
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <span>Message</span>
+                  <textarea placeholder="Write your message here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row100">
+                <div class="inputBox">
+                  <input type="submit" value="Send" onclick="Check()">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- info box -->
+        <div class="contact info">
+          <h3>Contact Info</h3>
+          <div class="infoBox">
+            <div>
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <p>4547 Hidden Pond Road <br>Tennessee</p>
+            </div>
+          </div>
+          <div class="infoBox">
+            <div>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <a href="mailto:bjcaifiu@gmail.com">bjcaifiu@gmail.com</a>
+            </div>
+          </div>
+          <div class="infoBox">
+            <div>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <a href="tel:0123456789">012-345-6789</a>
+            </div>
+          </div>
+          <!-- Social media link -->
+          <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+        <!-- map -->
+        <div class="contact map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1536.7928491386833!2d105.77968080413845!3d10.033199409729068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0881fa25557af%3A0x350619b0d40fc3b4!2zS2h1IDMgLSBUcsaw4budbmcgxJDhuqFpIGjhu41jIEPhuqduIFRoxqE!5e0!3m2!1sen!2s!4v1656993351727!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="icon">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+        <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Sitemap</a></li>
+        <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+        <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact us</a></li>
+      </ul>
+      <p><i class="fa-regular fa-copyright"></i>2022 Beautiful Beaches eProject | All rights reserved</p>
+    </footer>
+
+  </body>
+</html>

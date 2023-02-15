@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar2.css">
+    <title>Nav bar model</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="../images/logo.jpg"></div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li class="sub-menu"><a href="#">Beaches</a>
+            <ul>
+              <li><a href="../BeautifulBeaches/Waikiki.html" target="_blank">Waikiki beach</a></li>
+              <li><a href="#">sub page</a></li>
+              <li><a href="#">sub page</a></li>
+              <li><a href="#">sub page</a></li>
+              <li><a href="#">sub page</a></li>
+              <li><a href="#">sub page</a></li>
+            </ul>
+          </li>
+          <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Site map</a></li>
+          <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+          <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+          <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact us</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('nav').toggleClass('navBarActive');
+      })
+      $('ul li').click(function(){
+        $(this).toggleClass('navBarActive');
+        $(this).siblings().removeClass('navBarActive');
+      })
+    })
+    </script>
+  </body>
+</html>

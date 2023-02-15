@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+header{
+  z-index: 10000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0;
+  padding: 0 100px;
+  background: rgb(27, 25, 26);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header .logo{
+  height: 50px;
+  float: left;
+}
+
+header .logo img{
+  height: 100%;
+}
+
+header nav{
+  float: right;
+}
+
+header nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li{
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li.sub-menu::before{
+  content: '\f0d7';
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 50px;
+  color: #fff;
+  right: 3px;
+}
+
+header nav ul li.navBarActive.sub-menu::before{
+  content: '\f0d8';
+}
+
+header nav ul li ul{
+  position: absolute;
+  left: 0;
+  background: rgb(57, 55, 56);
+  display: none;
+}
+
+header nav ul li.navBarActive ul{
+  display: block;
+}
+
+header nav ul li ul li{
+  display: block;
+  width: 200px;
+}
+
+header nav ul li a{
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+header nav ul li a:hover{
+  background: rgb(33, 150, 243);
+}
+
+.menu-toggle{
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1035px){
+  header{
+    padding: 0 20px;
+  }
+  .menu-toggle{
+    display: block;
+  }
+  header nav{
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 49px);
+    background: rgb(27, 25, 26);
+    top: 49px;
+    left: -100%;
+    transition: 0.5s;
+  }
+  header nav.navBarActive{
+    left: 0;
+  }
+  header nav ul{
+    display: block;
+    text-align: center;
+  }
+  header nav ul li a{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  header nav ul li.navBarActive ul{
+    position: relative;
+    background: rgb(0, 63, 111);
+  }
+  header nav ul li ul li{
+    width: 100%;
+  }
+}
